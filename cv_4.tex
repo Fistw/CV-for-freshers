@@ -26,12 +26,28 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{傅礼玉} % Your name
-\address{1098356354@qq.com} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{(+86)15636828276} % Your phone number and email
 
 \begin{document}
+
+%%%%%%%%%%%%%%% ENTÊTE %%%%%%%%%%%%%%%
+\begin{wrapfigure}[0]{r}[0pt]{0pt}
+\vspace{-12pt}
+\includegraphics[scale=0.8]{fuliyu.jpg}
+\end{wrapfigure}
+
+\fontsize{20pt}{0pt}\selectfont
+\bf{傅礼玉}
+
+\normalfont
+\fontsize{12pt}{14pt}\selectfont
+哈尔滨工业大学，计算机科学与技术，硕士\\
+研究方向：无线传感网络\\
+1098356354@qq.com\\
+(+86)15636828276\\
+{\bf\Large\rmfamily    意向岗位：JAVA研发实习生}
+\vspace{8pt}
+%%%%%%%%%%%%%%% ENTÊTE %%%%%%%%%%%%%%%
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -60,10 +76,9 @@
 \begin{rSection}{技能}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-熟练使用C/C++、Python、Linux\\
+熟练使用Python、C/C++\\
 熟悉常用数据结构与算法\\
 熟悉计算机网络、操作系统、体系结构、数据库等 \\
-了解分布式系统\\
 \end{tabular}
 
 \end{rSection}
@@ -75,7 +90,7 @@
 \begin{rSection}{实习经验}
 
 \begin{rSubsection}{上海快仓}{2018.3 - 2018.5}{机器人控制系统部门}{}
-\item 解决菜鸟网络无锡猫超仓网络问题（大量AGV漫游速度慢，掉线问题严重，严重影响正常业务）：分析产生该问题的原因，调研学界和工业界对漫游问题的解决方案，创造性地将多路径TCP（MPTCP）技术应用于该仓库，完美低成本地解决了网络问题，从而该仓库能按时验收。
+\item 解决菜鸟网络无锡猫超仓网络问题（大量AGV漫游速度慢，掉线问题严重，严重影响正常业务）：分析产生该问题的原因，调研学界和工业界对漫游问题的解决方案，创造性地将多路径TCP（MPTCP）技术应用于该项目，完美低成本地解决了网络问题，保证了仓库项目能按时验收。
 \item 维护AGV中agent代码，调研测试自动化运维工具saltstack（类似于staragent）。
 \end{rSubsection}
 
@@ -83,9 +98,9 @@
 %------------------------------------------------
 
 \begin{rSubsection}{字节跳动}{2018.7 - 2018.8}{效率工程-安全审计部门}{}
-\item 效率工程内部堡垒机中的权限管理系统：使用Python/Flask/docker/Html/Redis实现。
+\item 效率工程内部堡垒机中的权限管理系统：使用Python/Flask/Docker/Html/Redis实现。
 \item 效率工程内部堡垒机中的日志审计系统：修复显示客户端数量与实际客户端数量不一致、Kafka消费中断等若干BUG。
-\item 为lark服务器中Redis/Elasticsearch集群增加systemd服务。
+\item 为Lark服务器中Redis集群增加systemd服务。
 \end{rSubsection}
 
 \end{rSection}
@@ -96,19 +111,27 @@
 
 \begin{rSection}{学校项目}
 
-\begin{rSubsection}{使用Scrapy爬取Google Scholar}{2016.10 - 2016.11}{}{}
+\begin{rSubsection}{使用Scrapy框架爬取Google Scholar}{2016.10 - 2016.11}{}{}
+\item 使用Python的Scrapy框架爬取了谷歌学术中的人员信息
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{面向 AGV 近场通信的时间同步技术与设备驱动研究}{2017.10 - 2018.5}{}{}
-\item 数据链路层的TDMA调度
+\item IEEE 802.15.4通信协议、数据链路层的TDMA调度、CC2650驱动
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{基于UWB的AGV定位、安全避让及通信方案}{2018.10 - 2019.3}{}{}
+\item UWB通信测距、TDOA3定位算法、IEEE 802.15.4通信协议
 \end{rSubsection}
 
+
+%------------------------------------------------
+
+\begin{rSubsection}{面向延迟敏感应用的MPTCP优化}{2019.4 - 2020.5}{}{}
+\item 对所处网络环境不稳定但对延迟敏感的应用（比如AGV），MPTCP默认的拥塞控制和流量调度方式不尽如人意，利用跨层的方法对MPTCP的拥塞控制和流量调度方式进行优化
+\end{rSubsection}
 
 \end{document}
